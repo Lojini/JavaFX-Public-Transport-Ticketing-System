@@ -1,4 +1,4 @@
-package sample;
+package sample.Controller;
 
 
 import java.awt.Dimension;

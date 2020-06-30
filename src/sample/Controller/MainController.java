@@ -1,4 +1,4 @@
-package sample;
+package sample.Controller;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.animation.Animation;
@@ -52,13 +52,13 @@ public class MainController {
         final Node source = (Node) event.getSource();
         String resource="";
        if(source.getId().equals("login")){
-            resource="admin.fxml";
+            resource="../GUI/loginUI.fxml";
         }
        else if (source.getId().equals("scanCard")){
-           resource="scanCard.fxml";
+           resource="../GUI/scanCard.fxml";
        }
        else if (source.getId().equals("ticket")){
-           resource="ticket.fxml";
+           resource="../GUI/ticket.fxml";
        }
 
         Scene mainScene= (Scene)((Node)event.getSource()).getScene();

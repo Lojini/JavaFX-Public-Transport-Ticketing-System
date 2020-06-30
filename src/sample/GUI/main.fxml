@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane prefHeight="720.0" prefWidth="960.0" style="-fx-background-color: linear-gradient(to bottom, #2c3e50, #2980b9);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+<GridPane prefHeight="720.0" prefWidth="960.0" style="-fx-background-color: linear-gradient(to bottom, #2c3e50, #2980b9);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.MainController">
    <columnConstraints>
       <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
    </columnConstraints>
@@ -32,7 +32,7 @@
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assets/logo.png" />
+                  <Image url="@../../assets/LogoTransparent.png" />
                </image>
                <viewport>
                   <Rectangle2D />
@@ -54,7 +54,7 @@
                <graphic>
                   <ImageView fitHeight="131.0" fitWidth="123.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../assets/login.png" />
+                        <Image url="@../../assets/Login.png" />
                      </image>
                      <viewport>
                         <Rectangle2D />
@@ -69,7 +69,7 @@
                <graphic>
                   <ImageView fitHeight="125.0" fitWidth="125.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../assets/card.png" />
+                        <Image url="@../../assets/ScanCard.png" />
                      </image>
                      <viewport>
                         <Rectangle2D />
@@ -84,7 +84,7 @@
                <graphic>
                   <ImageView fitHeight="115.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../assets/ticket.png" />
+                        <Image url="@../../assets/Ticket.png" />
                      </image></ImageView>
                </graphic>
             </JFXButton>

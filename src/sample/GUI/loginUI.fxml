@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.LoginController">
     <children>
         <StackPane>
             <children>
@@ -28,14 +28,32 @@
                         <Insets bottom="45.0" left="45.0" right="45.0" top="45.0" />
                     </StackPane.margin>
                     <children>
-                        <Label text="Login your Travel account" textFill="WHITE" VBox.vgrow="ALWAYS">
-                            <font>
-                                <Font name="Arial Rounded MT Bold" size="32.0" />
-                            </font>
-                            <VBox.margin>
-                                <Insets bottom="60.0" />
-                            </VBox.margin>
-                        </Label>
+                  <HBox alignment="CENTER" prefHeight="213.0" prefWidth="739.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="213.0" prefWidth="129.0">
+                           <children>
+                              <ImageView fitHeight="28.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../assets/Back_White.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton buttonType="RAISED" onAction="#backBtnClick" text="Back" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial" size="23.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                              <Label alignment="CENTER" prefHeight="38.0" prefWidth="598.0" text="Login your Travel account" textAlignment="CENTER" textFill="WHITE" HBox.hgrow="ALWAYS">
+                                  <font>
+                                      <Font name="Arial Rounded MT Bold" size="32.0" />
+                                  </font>
+                              </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="40.0" />
+                     </VBox.margin>
+                  </HBox>
                         <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="575.0" prefWidth="583.0" spacing="50.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
                             <effect>
                                 <DropShadow />
@@ -43,14 +61,14 @@
                             <children>
                                 <ImageView fitHeight="125.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../assets/feec15d0-1b52-47f8-a241-a7dcc9ee3da3_200x200.png" />
+                                        <Image url="@../../assets/UserProfile.png" />
                                     </image>
                                 </ImageView>
                         <HBox alignment="CENTER_LEFT" spacing="20.0">
                            <children>
                               <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../assets/icons8-user-male-26.png" />
+                                    <Image url="@../../assets/User.png" />
                                  </image>
                               </ImageView>
                                       <JFXTextField focusColor="#2980b9" maxWidth="-Infinity" prefWidth="270.0" promptText="NIC/Passport No." />
@@ -63,7 +81,7 @@
                            <children>
                               <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../assets/icons8-lock-26.png" />
+                                    <Image url="@../../assets/Lock.png" />
                                  </image>
                               </ImageView>
                                       <JFXPasswordField focusColor="#2980b9" maxWidth="-Infinity" prefWidth="270.0" promptText="Password">

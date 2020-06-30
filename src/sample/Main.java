@@ -13,8 +13,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
-        primaryStage.getIcons().add(new Image("assets/lionIcon.jpg"));
+        Parent root = FXMLLoader.load(getClass().getResource("GUI/main.fxml"));
+        primaryStage.getIcons().add(new Image("assets/Logo.jpg"));
         primaryStage.setScene(new Scene(root, 960, 720));
         primaryStage.show();
     }

@@ -3,7 +3,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<GridPane prefHeight="540.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ScanCardController">
+<GridPane prefHeight="540.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.ScanCardController">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
    </columnConstraints>
