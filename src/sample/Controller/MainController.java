@@ -52,7 +52,7 @@ public class MainController {
         final Node source = (Node) event.getSource();
         String resource="";
        if(source.getId().equals("login")){
-            resource="../GUI/loginUI.fxml";
+            resource="../GUI/userPanel.fxml";
         }
        else if (source.getId().equals("scanCard")){
            resource="../GUI/scanCard.fxml";
